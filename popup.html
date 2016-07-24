@@ -1,0 +1,46 @@
+<div class="popupContainer">
+<div class="leftPane">
+	<div class="title">{{currentVideoTitle}} - {{currentYear}}</div>
+	<div class="quote">{{currentQuote}}</div>
+	<div class="video"><video controls="" autoplay="true" name="media" src="{{currentVideoUrl}}" type="video/mp4" style="width: 600px; height: 345px;"></video></div>
+	
+	<!--  <div class="imagesContainer">
+		<img image-cache="" class="images" check-image="" ng-src="{{image.url}}" ng-repeat="image in currentImages"/>
+	</div> -->
+</div>
+<div class="rightPane">
+	<div class="Heading">
+	Movie Details
+	<hr/>
+	</div>
+	<div class="directors">
+		<span class="list_heading">Directors</span>
+		<ul class="list">
+			<li ng-repeat="director in currentDirectors">
+			{{director.name}}
+			</li>
+		</ul>
+	</div>
+	<div class="casts">
+	<span class="list_heading">Casts</span>
+		<ul class="list">
+			<li ng-repeat="cast in currentCasts">
+			{{cast.name}}
+			</li>
+		</ul>
+		
+		
+	</div>
+	<div class="genres">
+	<span class="list_heading">Genres</span>
+		<ul class="list">
+			<li ng-repeat="genre in currentGenres">
+			{{genre}}
+			</li>
+		</ul>
+	</div>
+	<div class="">
+	</div>
+</div>	
+	
+</div>

@@ -1,0 +1,21 @@
+<div class="moviesContainer">
+	<section class="thumbnails">
+		<div ng-repeat="movie in movies" ng-click="clickToOpen($index)" data-index="{{$index}}">
+			<a >
+			<div class="movies">
+			  <div>
+				<div>
+					<img check-image="" ng-src="{{movie.keyArtImages[0].url}}" width="150px" height="150px"/>
+				</div>
+			  </div>
+			  </div>
+			<h3>
+			{{movie.headline}}
+			<br/>
+			{{movie.year}}
+			</h3>
+			
+			</a>
+		</div>						
+	</section>
+</div>
