@@ -30,11 +30,13 @@
 }
 .leftPane{
 	float: left;
+	width: 600px;
 }
 .rightPane{
 	float: left;
 	width: 235px;
 	margin-left: 20px;
+	margin-top: 25px;
 }
 .list {
 	font-size: 12px;
@@ -55,4 +57,16 @@
 }
 .quote:first-letter {
     text-transform: uppercase;
+}
+.popupContainer{
+	width: 865px;
+}
+.synopsis{
+	font-size: 14px;
+	color: #ff496e;
+	line-height: 20px;
+	margin-top: 10px;
+}
+.ngdialog{
+	padding-top: 100px !important; 
 }
